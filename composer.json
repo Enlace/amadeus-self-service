@@ -1,0 +1,28 @@
+{
+    "name": "aldogtz/amdeus-selfservice",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Aldogtz\\AmdeusSelfservice\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aldo Gutierrez",
+            "email": "aldogtz1998@gmail.com"
+        }
+    ],
+    "require": {
+        "amadeus4dev/amadeus-php": "^0.3.0"
+    },
+    "extra":{
+        "laravel":{
+            "providers": [
+                "Aldogtz\\AmdeusSelfservice\\AmadeusServiceProvider"
+            ],
+            "aliases": {
+                "Amadeus": "Aldogtz\\AmdeusSelfservice\\Facades\\AmadeusFacade"
+            }
+        }
+    }
+}
